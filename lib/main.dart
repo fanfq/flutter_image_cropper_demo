@@ -113,10 +113,13 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
         androidUiSettings: AndroidUiSettings(
             toolbarTitle: 'Cropper',
-            toolbarColor: Colors.deepOrange,
-            toolbarWidgetColor: Colors.white,
-            initAspectRatio: CropAspectRatioPreset.original,
-            lockAspectRatio: false),
+            toolbarColor: Colors.deepOrange,//标题栏颜色
+            toolbarWidgetColor: Colors.white,//标题栏字体颜色
+            initAspectRatio: CropAspectRatioPreset.original,//裁切比例
+            hideBottomControls: false,//隐藏底部工具，默认false
+            showCropGrid: true,//辅助线内框，默认true
+            lockAspectRatio: true//锁定辅助线位置
+        ),
         iosUiSettings: IOSUiSettings(
           title: 'Cropper',
         ));
